@@ -1,0 +1,209 @@
+.register_form{
+  width: 500px;
+  margin: auto;
+  margin-top: 25px;
+  padding: 25px;
+  background: beige;
+} 
+
+.login_form{
+  width: 500px;
+  margin: auto;
+  margin-top: 25px;
+  padding: 25px;
+  background: beige;
+} 
+
+.card-img-top{
+  height: 300px;
+}
+
+/* .footer{
+    height:60px;
+    width:100%;
+    }
+    
+    .head-div h1{
+    text-align:center;
+    }
+    
+    img{
+    width: 180px;
+    height: 100px;
+    }
+    
+    .img-div {
+    display: flex;
+    }
+    
+    .img-div img{
+    width: 25%;
+    height: 200px;
+    }
+    
+    .mid-div img{
+    float: left;
+    width: 25%;
+    }
+    
+    #main{
+      margin-left: 90px;
+      justify-content: center;
+    }
+    
+    input[type=text]{
+    width:70%;
+    }
+    
+    input[type=submit]
+    {
+     justify-content: center;
+     color:red;
+    }
+    
+    th {
+    text-align: left;
+    }
+    
+    .center {
+        margin: auto;
+        width: 60%;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position:relative;
+        bottom:230px;
+        left:5px;
+    }
+    
+    ul > li { width:100px; float:right; list-style-type:none; background-color:black; padding-top:30px; }
+    ul > li > ul { display:none;}
+    ul > li:hover > ul { display:block;}
+    ul > li > ul { padding-left:10px}
+    
+    .top-div {
+    background-color:black;
+    color: red;
+    height:80px;
+    }
+    
+    .submit_button{
+    text-align: center;
+    }
+    
+    .sublink_1{
+    background-color:black;
+    margin-top:20px;
+    margin-left:-10px;
+    }
+    
+    a {
+      color: white;
+      text-decoration:none;
+      padding:10px;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color: black;
+    }
+    
+    .navbar a {
+      float: right;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 30px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: right;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 30px 20px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 6px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    body{
+      background: #f2f2f2;
+      font-family: 'Open Sans', sans-serif;
+    } */
+    
+    .search {
+      width: 100%;
+      position: relative;
+      display: flex;
+    }
+    
+    .searchTerm {
+      width: 100%;
+      border: 3px solid #00B4CC;
+      border-right: none;
+      padding: 5px;
+      height: 20px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: #9DBFAF;
+    }
+    
+    .searchTerm:focus{
+      color: #00B4CC;
+    }
+    
+    .searchButton {
+      width: 40px;
+      height: 36px;
+      border: 1px solid #00B4CC;
+      background: #00B4CC;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    
+    /*Resize the wrap to see the search bar change!*/
+    .wrap{
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }

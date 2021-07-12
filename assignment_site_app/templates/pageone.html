@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{% comment %} <link rel="stylesheet" href="{% static 'assignment_site_app/style.css' %}"/> {% endcomment %}
+</head>
+<body>
+<div class='bg_gradient' style='background-image: linear-gradient(red, yellow);'>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href=".">The Midnight Times | JSE API</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href=".">Home</a>
+        </li>
+      </ul>
+      <form class="form-inline" action="/pageone/" style="margin: auto;" method='POST'>
+      {% csrf_token %}
+        <input name="search" class="form-control" type="search" style="width:500px;padding: 10px;" placeholder="What are you looking for?" aria-label="Search" required>
+        <button class="btn btn-outline-success" style="margin:10px;" type="submit">Search</button>
+      </form>
+      <span style='margin:4px;'>Hello, {{ request.user }} </span>
+      <span>
+      <a href="{% url 'logout' %}"> Logout</a>
+      </span>
+
+    </div>
+  </nav>
+  <br>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'assignment_site_app/scripts.js' %}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

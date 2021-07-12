@@ -1,0 +1,56 @@
+{% comment %} <h3>Login</h3>
+<p>No account</p>
+<b><a href = "{% url 'registerpage' %}">HERE</a><b> {% endcomment %}
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'assignment_site_app/style.css' %}"/>
+</head>
+<body>
+<h3 style="text-align:center">Login</h3>
+
+<form class="login_form" method="POST" action="">
+{% csrf_token %}
+  <div class="form-group">
+    <label for="exampleInputEmail1">Username</label>
+    <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="text-center">
+  <button type="submit" class="btn btn-primary" name="create_user">Submit</button>
+  <div class="text-center">
+
+</form>
+
+
+{% comment %} <form class="register_form" method="POST" action="">
+{% csrf_token %}
+  <div class="form-group">
+    <label for="id_username">User name</label>
+    {{ form.username }}
+  </div>
+  <div class="form-group">
+    <label for="id_email">Email address</label>
+    {{ form.email }}  
+ </div>
+  <div class="form-group">
+    <label for="id_password1">Enter Password</label>
+    {{ form.password1 }}  
+ </div>
+  <div class="form-group">
+    <label for="id_password2">Confirm Password</label>
+    {{ form.password2 }}  
+ </div>
+
+  <button type="submit" class="btn btn-primary" name="create_user">Submit</button>
+</form>  {% endcomment %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'assignment_site_app/scripts.js' %}"></script>
+</body>
+</html>

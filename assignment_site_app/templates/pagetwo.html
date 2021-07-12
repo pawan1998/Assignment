@@ -1,0 +1,36 @@
+{% comment %} <!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'assignment_site_app/style.css' %}">
+</head>
+<body>
+<div class="center hideform" style="background-color:gray;">
+<button id="close" style="float: right;">X</button>
+<p style="text-align:center;">Thank You !</p><hr>
+<p style="text-align:center;">Your form is submitted successfully</p>
+<p id="name_data">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p id="mail_data">Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p id="age_data">Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p id="city_data">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p id="state_data">State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p id="zip_data">Zipcode:&nbsp;&nbsp;</p>
+</form>
+</div> {% endcomment %}
+
+{% load static %}
+
+{% for iter in latest_data %}
+<h4>{{ iter.name }} and {{ iter.id }}</h4><br>
+<div class="center hideform" style="background-color:gray;">
+<button id="close" style="float: right;">X</button>
+<p style="text-align:center;">Thank You !</p><hr>
+<p style="text-align:center;">Your form is submitted successfully</p>
+<p id="name_data">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ iter.name }}</p>
+<p id="mail_data">Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ iter.mail }}</p>
+<p id="age_data">Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ iter.age}}</p>
+<p id="city_data">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ iter.city }}</p>
+<p id="state_data">State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ iter.state }}</p>
+<p id="zip_data">Zipcode:&nbsp;&nbsp;{{ iter.zips }}</p>
+</div>
+{% endfor %}
